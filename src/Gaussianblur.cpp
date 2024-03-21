@@ -5,8 +5,8 @@
 
 int main() {
     std::string imagePath = "/home/vicrrs/projects/gcc_ComputerVision/data/imgs/003_Lenna.png";
+    
     cv::Mat img = cv::imread(imagePath, cv::IMREAD_COLOR);
-
     cv::Mat gaussianImg;
 
     cv::GaussianBlur(img, gaussianImg, cv::Size(15, 15), 0);
